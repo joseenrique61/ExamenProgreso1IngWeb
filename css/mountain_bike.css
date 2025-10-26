@@ -1,1 +1,59 @@
-/*# sourceMappingURL=mountain_bike.css.map */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: bold;
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
+html {
+  /* This line makes 1rem = 10px, easier for calculations with rem */
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.header {
+  background-color: #1A1917;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 3.4rem;
+}
+.header__logo {
+  max-height: 5rem;
+}
+
+.menu {
+  color: #fff;
+}
+.menu__list {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 3.85rem;
+  list-style-type: none;
+}
+.menu__item {
+  font-weight: bold;
+  font-size: 1.14rem;
+}
+.menu__item--icon {
+  height: 2rem;
+}
+.menu__item--icon:hover {
+  color: #68E51B;
+}
+.menu__item:hover {
+  color: #68E51B;
+}/*# sourceMappingURL=mountain_bike.css.map */
