@@ -1,5 +1,6 @@
 @font-face {
   font-family: "Montserrat";
+  font-weight: 400;
   src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
 }
 @font-face {
@@ -14,7 +15,7 @@
 }
 @font-face {
   font-family: "Montserrat";
-  font-weight: bold;
+  font-weight: 700;
   src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
 }
 @font-face {
@@ -83,32 +84,63 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+.banner__text-wrapper {
+  flex: 1 1 auto;
+  margin: 26.5rem 0 0 13rem;
+  font-size: 3.2rem;
+  line-height: 8rem;
+}
 
 .text {
   color: #fff;
-  font-size: 3.2rem;
-  line-height: 8rem;
-  flex: 1 1 auto;
-  padding: 26.5rem 0 0 13rem;
+  display: flex;
+  flex-direction: column;
+}
+.text--black-text {
+  color: #000;
+  display: flex;
+  flex-direction: column;
 }
 .text__title {
   font-weight: 300;
 }
 .text__title > span {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 .text__title > span::before {
   content: "";
   display: block;
   width: 110px;
-  height: 1px;
+  height: 2px;
   background-color: #68E51B;
-  margin-top: 4rem;
 }
 .text__title > strong {
   font-weight: 800;
-  margin-left: 8rem;
+  margin-left: 1.25em;
+}
+.text__description {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: #807D79;
+  margin: 0 9.5rem;
+}
+.text__list ul {
+  list-style-type: none;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.text__list li {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.text__list li + li {
+  margin-top: 4px;
+}
+.text__icon {
+  height: 45px;
 }
 .text__cta {
   line-height: 1rem;
@@ -155,4 +187,134 @@ a {
   background-color: #fff;
   width: 19rem;
   height: 8rem;
+}
+
+.section-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50% 50%;
+}
+.section-1__left {
+  background-image: url("../img/img2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 0.9948;
+  grid-row: 1/span 2;
+  grid-column: 1/span 2;
+}
+.section-1__left-text-wrapper {
+  margin: 15rem 0 0 9.5rem;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 4rem;
+}
+.section-1__left-text-wrapper h2 span {
+  gap: 1.5rem;
+}
+.section-1__left-text-wrapper h2 span::before {
+  width: 78px;
+}
+.section-1__left-text-wrapper h2 strong {
+  margin-left: 1.1em;
+}
+.section-1__left-text-wrapper .text--black-text {
+  gap: 4.5rem;
+}
+.section-1__left-text-wrapper .text__cta {
+  margin-left: 9.3rem;
+}
+.section-1__left-text-wrapper .text__cta-text {
+  font-size: 1.3rem;
+}
+.section-1__top-right-text-wrapper {
+  margin: 10rem 0 0 6.5rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+.section-1__top-right-text-wrapper h3 span {
+  gap: 1rem;
+}
+.section-1__top-right-text-wrapper h3 span::before {
+  width: 30px;
+}
+.section-1__top-right-text-wrapper h3 strong {
+  margin-left: 1em;
+}
+.section-1__top-right-text-wrapper .text__description {
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  margin: 3.3rem 4rem;
+}
+.section-1__top-right-text-wrapper .text__cta {
+  margin-left: 4rem;
+}
+.section-1__top-right-text-wrapper .text__cta-text {
+  font-size: 1.1rem;
+}
+.section-1__bottom-left {
+  background-color: #1A1917;
+}
+.section-1__bottom-left-text-wrapper {
+  margin: 10rem 0 0 6.5rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+.section-1__bottom-left-text-wrapper h3 span {
+  gap: 1rem;
+}
+.section-1__bottom-left-text-wrapper h3 span::before {
+  width: 30px;
+}
+.section-1__bottom-left-text-wrapper h3 strong {
+  margin-left: 1em;
+}
+.section-1__bottom-left-text-wrapper .text__description {
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  margin: 3.3rem 4rem;
+}
+.section-1__bottom-left-text-wrapper .text__cta {
+  margin-left: 4rem;
+}
+.section-1__bottom-left-text-wrapper .text__cta-text {
+  font-size: 1.1rem;
+}
+.section-1__bottom-left .text__description {
+  color: #fff;
+}
+
+.section-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.section-2__right-text-wrapper {
+  margin: 15rem 0 0 9.5rem;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 4rem;
+}
+.section-2__right-text-wrapper h2 span {
+  gap: 1.5rem;
+}
+.section-2__right-text-wrapper h2 span::before {
+  width: 78px;
+}
+.section-2__right-text-wrapper h2 strong {
+  margin-left: 1.1em;
+}
+.section-2__right-text-wrapper .text--black-text {
+  gap: 4.5rem;
+}
+.section-2__right-text-wrapper .text__cta {
+  margin-left: 9.3rem;
+}
+.section-2__right-text-wrapper .text__cta-text {
+  font-size: 1.3rem;
+}
+.section-2__right-text-wrapper {
+  margin: 15.5rem 0 0 9.5rem;
+  font-size: 2.4rem;
 }/*# sourceMappingURL=mountain_bike.css.map */
