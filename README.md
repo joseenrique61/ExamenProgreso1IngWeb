@@ -1,6 +1,6 @@
 # Mountain Bike - Examen Progreso 1 Ingeniería Web
 
-![Badge en desarrollo](https://img.shields.io/badge/estado-en%20desarrollo-yellowgreen)
+![Badge completo](https://img.shields.io/badge/estado-completo-green)
 
 ## Índice
 
