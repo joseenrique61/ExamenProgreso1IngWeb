@@ -8,8 +8,35 @@ $font-path: "../fonts/";
 
 @font-face {
     font-family: "Montserrat";
+    font-weight: 300;
+    src: url($font-path + "Montserrat-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 500;
+    src: url($font-path + "Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
     font-weight: bold;
     src: url($font-path + "Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 800;
+    src: url($font-path + "Montserrat-ExtraBold.ttf") format("truetype");
+}
+
+@mixin make-div-size-of-background-img($url, $aspect-ratio) {
+    background-image: url($url);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    aspect-ratio: $aspect-ratio;
 }
 
 html {
@@ -69,5 +96,108 @@ a {
         &:hover {
             color: $base-color;
         }
+    }
+}
+
+.banner {
+    @include make-div-size-of-background-img("../img/Banner.png", 1.78);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.text {
+    color: #fff;
+
+    font-size: 3.2rem;
+    line-height: 8rem;
+
+    flex: 1 1 auto;
+    padding: 26.5rem 0 0 13rem;
+
+    &__title {
+        font-weight: 300;
+
+        &>span {
+            display: flex;
+            gap: 2rem;
+
+            &::before {
+                content: '';
+                display: block;
+                width: 110px;
+                height: 1px;
+                background-color: $base-color;
+                margin-top: 4rem;
+            }
+        }
+
+        &>strong {
+            font-weight: 800;
+
+            margin-left: 8rem;
+        }
+    }
+
+    &__cta {
+        line-height: 1rem;
+
+        margin: 0.5rem 0 0 13rem;
+
+        &-text {
+            font-weight: bold;
+            font-size: 1.6rem;
+
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        &-button {
+            padding: 0.6rem;
+
+            background-color: $base-color;
+            color: #000;
+        }
+
+        &-icon {
+            height: 1.5rem;
+        }
+    }
+}
+
+.button-group {
+    display: flex;
+
+    font-weight: 500;
+    font-size: 1.25rem;
+
+    &__separator {
+        background-color: #fff;
+
+        height: 100%;
+        width: 1px;
+
+        display: flex;
+        align-items: center;
+
+        &-fill {
+            content: '';
+            background-color: #EBEBEB;
+            height: 50%;
+            width: 1px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #fff;
+
+        width: 19rem;
+        height: 8rem;
     }
 }

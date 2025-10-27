@@ -4,8 +4,23 @@
 }
 @font-face {
   font-family: "Montserrat";
+  font-weight: 300;
+  src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 500;
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
   font-weight: bold;
   src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-weight: 800;
+  src: url("../fonts/Montserrat-ExtraBold.ttf") format("truetype");
 }
 html {
   /* This line makes 1rem = 10px, easier for calculations with rem */
@@ -56,4 +71,88 @@ a {
 }
 .menu__item:hover {
   color: #68E51B;
+}
+
+.banner {
+  background-image: url("../img/Banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 1.78;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text {
+  color: #fff;
+  font-size: 3.2rem;
+  line-height: 8rem;
+  flex: 1 1 auto;
+  padding: 26.5rem 0 0 13rem;
+}
+.text__title {
+  font-weight: 300;
+}
+.text__title > span {
+  display: flex;
+  gap: 2rem;
+}
+.text__title > span::before {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 1px;
+  background-color: #68E51B;
+  margin-top: 4rem;
+}
+.text__title > strong {
+  font-weight: 800;
+  margin-left: 8rem;
+}
+.text__cta {
+  line-height: 1rem;
+  margin: 0.5rem 0 0 13rem;
+}
+.text__cta-text {
+  font-weight: bold;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.text__cta-button {
+  padding: 0.6rem;
+  background-color: #68E51B;
+  color: #000;
+}
+.text__cta-icon {
+  height: 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+.button-group__separator {
+  background-color: #fff;
+  height: 100%;
+  width: 1px;
+  display: flex;
+  align-items: center;
+}
+.button-group__separator-fill {
+  content: "";
+  background-color: #EBEBEB;
+  height: 50%;
+  width: 1px;
+}
+.button-group__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 19rem;
+  height: 8rem;
 }/*# sourceMappingURL=mountain_bike.css.map */
