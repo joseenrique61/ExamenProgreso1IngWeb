@@ -317,4 +317,142 @@ a {
 .section-2__right-text-wrapper {
   margin: 15.5rem 0 0 9.5rem;
   font-size: 2.4rem;
+}
+
+.section-3 {
+  display: grid;
+  grid-template-columns: 25.45% 24.55% 24.55% 25.45%;
+  grid-template-rows: 50% 50%;
+}
+.section-3__left {
+  background-image: url("../img/img6.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 0.5025;
+  grid-row: 1/span 2;
+}
+.section-3__left-text-wrapper {
+  margin: 15rem 0 0 9.5rem;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 4rem;
+}
+.section-3__left-text-wrapper h2 span {
+  gap: 1.5rem;
+}
+.section-3__left-text-wrapper h2 span::before {
+  width: 78px;
+}
+.section-3__left-text-wrapper h2 strong {
+  margin-left: 1.1em;
+}
+.section-3__left-text-wrapper .text--black-text {
+  gap: 4.5rem;
+}
+.section-3__left-text-wrapper .text__cta {
+  margin-left: 9.3rem;
+}
+.section-3__left-text-wrapper .text__cta-text {
+  font-size: 1.3rem;
+}
+.section-3__left-text-wrapper {
+  margin: 16rem 0 0 4.5rem;
+  font-size: 2.4rem;
+}
+.section-3__left-text-wrapper .text--black-text {
+  gap: 3rem;
+}
+.section-3__left-text-wrapper .text--black-text .text__description {
+  font-size: 1.3rem;
+  margin: 0 2rem 0 9.5rem;
+  line-height: 1.5rem;
+}
+.section-3__right {
+  grid-column: 4;
+  grid-row: 1/span 2;
+}
+.section-3__top-right {
+  background-color: #1A1917;
+}
+.section-3__top-right-text-wrapper {
+  margin: 10rem 0 0 6.5rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+.section-3__top-right-text-wrapper h3 span {
+  gap: 1rem;
+}
+.section-3__top-right-text-wrapper h3 span::before {
+  width: 30px;
+}
+.section-3__top-right-text-wrapper h3 strong {
+  margin-left: 1em;
+}
+.section-3__top-right-text-wrapper .text__description {
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  margin: 3.3rem 4rem;
+}
+.section-3__top-right-text-wrapper .text__cta {
+  margin-left: 4rem;
+}
+.section-3__top-right-text-wrapper .text__cta-text {
+  font-size: 1.1rem;
+}
+.section-3__top-right .text__description {
+  color: #fff;
+}
+.section-3__bottom-left-text-wrapper {
+  margin: 10rem 0 0 6.5rem;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+}
+.section-3__bottom-left-text-wrapper h3 span {
+  gap: 1rem;
+}
+.section-3__bottom-left-text-wrapper h3 span::before {
+  width: 30px;
+}
+.section-3__bottom-left-text-wrapper h3 strong {
+  margin-left: 1em;
+}
+.section-3__bottom-left-text-wrapper .text__description {
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  margin: 3.3rem 4rem;
+}
+.section-3__bottom-left-text-wrapper .text__cta {
+  margin-left: 4rem;
+}
+.section-3__bottom-left-text-wrapper .text__cta-text {
+  font-size: 1.1rem;
+}
+
+.section-4 {
+  background-image: url("../img/img9.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 1.78;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.section-4__text-wrapper {
+  flex: 1 1 auto;
+  margin: 21% 0 0 52.5%;
+  font-size: 3.2rem;
+  line-height: 8rem;
+}
+.section-4__text-wrapper span {
+  gap: 1.5rem;
+}
+.section-4__text-wrapper span::before {
+  width: 95px;
+}
+.section-4__text-wrapper strong {
+  margin-left: 4.5rem;
 }/*# sourceMappingURL=mountain_bike.css.map */
